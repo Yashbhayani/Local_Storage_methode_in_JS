@@ -29,21 +29,16 @@
 
 <script>
    var name  =  localStorage.getItem("textvalue");
-    var surname = localStorage.getItem("textvalue1");
-
-if(name == "" || surname == "")
-{
+   var surname = localStorage.getItem("textvalue1");
+    
+    if(name == "" || surname == ""){
     window.location.href = "C:/Users/Admin/OneDrive/Documents/javaScriptcode/JS/page1.html";
-}
-else if(name == null || surname == null)
-{
+   }else if(name == null || surname == null){
     window.location.href = "C:/Users/Admin/OneDrive/Documents/javaScriptcode/JS/page1.html";
-}
-else
-{
+   }else{
     document.getElementById("rname").innerHTML = name;
     document.getElementById("rsurname").innerHTML = surname;
-}
+   }
 
 </script>
 
