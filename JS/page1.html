@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Input Form</title>
+    <script>
+
+
+            function frty()
+        {
+            var D1 = document.getElementById("D1").value;
+            var D2 = document.getElementById("D2").value;
+
+            if(D1 == "" || D2 == "" || D1 == null || D2 == null )
+            {
+                alert("You are a not Define Property!");
+                return frty;
+            }
+            else
+            {
+             localStorage.setItem("textvalue",D1);
+             localStorage.setItem("textvalue1",D2);
+            }
+        }
+
+
+       
+    </script>
+    </head>
+<body>
+    <!-- C:\Users\Admin\OneDrive\Documents\JS\page2.html -->
+<form style="padding: 20px;" action="page2.html" method="post">
+    <form>
+        <div class="form-group">
+        <label>First Name:- </label>
+        <input type="text" name="Name" id="D1" placeholder="First name" value="" class="form-control">
+        </div>
+
+        <div class="form-group">
+        <label>SurName:- </label>
+        <input type="text" name="Surname" id="D2" placeholder="Last name" value="" class="form-control">
+        </div>
+        
+        <button type="submit" onclick="frty()" class="btn btn-primary">Submit</button>
+    </form>
+   <br><br>
+    
+</form>
+</body>
+</html>
