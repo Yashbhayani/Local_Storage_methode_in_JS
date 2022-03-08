@@ -22,29 +22,25 @@
             <th>Gender</th>
             <th>Email address</th>
             <th>Password</th>
-            <!-- <th>Edit</th>
-            <th>Delate</th> -->
         </tr>
         </thead>
-        <tbody id="io">
         
+        <tbody id="io">   
         </tbody>
-</table>
+    </table>
+    
 </div>
+    
     <script>
-
 let text = localStorage.getItem("User");
 let obj = JSON.parse(text);
 
 var HUI = "<thead>";
-    for(var i=0; i<obj.length;i++ )
-    {
+    for(var i=0; i<obj.length;i++ ){
         HUI += "<tr> <td>" + obj[i].FirstName + "</td> <td>" + obj[i].LastName +  "</td> <td>" + obj[i].Education_Filed + "</td> <td> " + obj[i].Gender + "</td><td> " + obj[i].Email + " </td> <td>" + obj[i].Password+ " </td></tr>" 
     }
 HUI += "</thead>"
 document.getElementById("io").innerHTML = HUI;
-
-
         </script>
 
 </body>
